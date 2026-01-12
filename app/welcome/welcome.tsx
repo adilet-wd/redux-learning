@@ -1,5 +1,6 @@
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
+import { NavLink} from "react-router";
 
 export function Welcome() {
   return (
@@ -40,6 +41,7 @@ export function Welcome() {
               ))}
             </ul>
           </nav>
+          <NavLink to={"/about-us"} className={"text-2xl"}>About</NavLink>
         </div>
       </div>
     </main>
